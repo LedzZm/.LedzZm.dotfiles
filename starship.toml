@@ -40,7 +40,7 @@ symbol = '[✗](bold red) '
 show_milliseconds = true
 format = "[   $duration ]($style)"
 show_notifications = true
-min_time_to_notify = 30_000
+min_time_to_notify = 180_000
 
 [username]
 show_always = true
