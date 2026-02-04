@@ -21,5 +21,5 @@ fzf --fish | source
 # Active fish theme. 
 fish_config theme choose "Catppuccin Macchiato"
 
-# Should be kept at the end of the file
+# Should better be kept at the end of the file
 starship init fish | source
