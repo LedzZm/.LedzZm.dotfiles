@@ -13,7 +13,7 @@ abbr -a gd 'git diff'
 
 # TODO: Comment and group.
 # Sanity alias for scripts.
-abbr -a nvm fnm
+alias nvm='fnm'
 
 # Enable fzf keybindings. (CTRL-r/t/c)
 fzf --fish | source
