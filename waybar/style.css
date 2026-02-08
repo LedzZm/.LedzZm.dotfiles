@@ -1,0 +1,161 @@
+@import "../colors/gtk3-colors.css";
+
+@define-color border @surface2;
+@define-color active-workspace @mauve;
+@define-color default_text @lavender;
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 16px;
+}
+
+window#waybar {
+  background: @crust;
+  color: @subtext1;
+}
+
+.top-bar {
+  border-bottom: 2px solid @border;
+}
+
+.bottom-bar {
+  border-top: 2px solid @border;
+}
+
+#custom-audio,
+#custom-group-toggle-system-health,
+#network,
+#bluetooth,
+#language,
+#battery,
+#clock,
+#custom-swaync,
+#pulseaudio,
+#custom-session {
+  margin: 0 8px;
+  color: @default_text;
+}
+
+#cpu {
+  color: transparent;
+}
+#cpu.warning {
+  color: @peach;
+}
+#cpu.critical {
+  color: @red;
+}
+
+#system-health #cpu,
+#system-health #memory,
+#system-health #disk {
+  padding: 0 6px;
+}
+
+#system-health #cpu {
+  color: @red;
+}
+
+#system-health #memory {
+  color: @peach;
+}
+
+#system-health #disk {
+  color: @blue;
+}
+
+.modules-right {
+  margin-right: 8px;
+}
+
+#workspaces button {
+  padding: 4px 8px;
+  margin: 0 2px;
+  border-radius: 0;
+  color: @default_text;
+  border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+  color: @active-workspace;
+  border-bottom: 3px solid @active-workspace;
+}
+
+#workspaces button:hover {
+  background: @base;
+  color: @active-workspace;
+  /* There is an intermediate step that messes with the transition, the lines below are workaround for that. */
+  border: 1px solid transparent;
+  border-bottom: 3px solid @active-workspace;
+  box-shadow: none;
+}
+
+#custom-audio {
+  padding-left: 16px;
+  border-left: 2px solid @border;
+}
+
+#mpris.spotify {
+  color: @green;
+}
+
+#custom-audio #mpris {
+  margin-right: 8px;
+}
+
+#pulseaudio {
+  margin: 0;
+}
+
+#pulseaudio.muted {
+  color: @yellow;
+}
+
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  margin-left: -4px;
+  min-height: 4px;
+  min-width: 60px;
+  border-radius: 5px;
+  border: 2px solid @green;
+  background-color: transparent;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: @green;
+  border: none;
+}
+
+#privacy {
+  background: @surface0;
+  padding: 4px 12px;
+  margin: 6px;
+  border-radius: 12px;
+}
+
+#privacy-item {
+  /* Configured in module spacing. */
+  margin: 0 2px;
+}
+
+#privacy-item.screenshare,
+#privacy-item.audio-in {
+  color: @maroon;
+}
+
+#custom-swaync.notification,
+#custom-swaync.inhibited-notification,
+#custom-swaync.dnd-notification,
+#custom-swaync.dnd-inhibited-notification {
+  color: @maroon;
+}

@@ -1,0 +1,6 @@
+{
+  "hyprland/language": {
+    "format": "󰌌 {short}",
+    "tooltip-format": "Language: {long}"
+  }
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "reload_style_on_change": true,
+    "layer": "top",
+    "name": "top-bar",
+    "position": "top",
+    "on-sigusr1": "noop",
+    "include": [
+      "$HOME/.config/waybar/modules/basic.jsonc",
+      "$HOME/.config/waybar/modules/laptop.jsonc",
+      "$HOME/.config/waybar/modules/system-health.jsonc",
+      "$HOME/.config/waybar/modules/hyprland.jsonc",
+      "$HOME/.config/waybar/modules/swaync.jsonc",
+      "$HOME/.config/waybar/modules/pulseaudio.jsonc",
+      "$HOME/.config/waybar/modules/mpris.jsonc",
+    ],
+    "modules-left": ["hyprland/workspaces", "group/custom-audio"],
+    "modules-center": ["privacy"],
+    "modules-right": [
+      "cpu",
+
+      "group/system-health",
+      "network",
+      "bluetooth",
+      "hyprland/language",
+      "backlight",
+      "battery",
+      "clock",
+      "custom/lock",
+      "custom/swaync",
+    ],
+
+    "group/custom-audio": {
+      "orientation": "inherit",
+      "modules": ["mpris", "group/pulseaudio"],
+    },
+    "group/system-health": {
+      "orientation": "horizontal",
+      "drawer": {
+        "transition-duration": 200,
+        "click-to-reveal": true,
+        "transition-left-to-right": false,
+      },
+      "modules": [
+        "custom/group-toggle-system-health",
+        "cpu",
+        "memory",
+        "temperature",
+        "disk",
+      ],
+    },
+    "custom/group-toggle-system-health": {
+      "format": "",
+      "tooltip": false,
+    },
+  },
+  {
+    "include": [
+      "$HOME/.config/waybar/modules/basic.jsonc",
+      "$HOME/.config/waybar/modules/laptop.jsonc",
+      "$HOME/.config/waybar/modules/system-health.jsonc",
+      "$HOME/.config/waybar/modules/hyprland.jsonc",
+      "$HOME/.config/waybar/modules/swaync.jsonc",
+      "$HOME/.config/waybar/modules/pulseaudio.jsonc",
+      "$HOME/.config/waybar/modules/mpris.jsonc",
+    ],
+
+    "layer": "top",
+    "position": "bottom",
+    "name": "bottom-bar",
+    "modules-left": [],
+    "modules-center": ["wlr/taskbar"],
+    "modules-right": [
+      "group/system-health",
+      "group/pulseaudio",
+      "tray",
+      "custom/session",
+    ],
+
+    "custom/session": {
+      "format": "⏻",
+      "tooltip": false,
+      "menu": "on-click",
+      "menu-file": "~/.config/waybar/power_menu.xml",
+      "menu-actions": {
+        "shutdown": "shutdown",
+        "reboot": "reboot",
+        "suspend": "systemctl suspend",
+        "hibernate": "systemctl hibernate",
+      },
+    },
+
+    "wlr/taskbar": {
+      "icon-size": 14,
+      "on-click": "activate",
+      "on-click-middle": "close",
+    },
+  },
+]

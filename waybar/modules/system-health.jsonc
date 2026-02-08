@@ -1,0 +1,29 @@
+{
+  "cpu": {
+    "interval": 1,
+    "format": " {usage}%",
+    "states": {
+      "warning": 70,
+      "critical": 90,
+    },
+    "on-click": "ghostty --title=forced-floating -e btop",
+  },
+  "memory": {
+    "interval": 1,
+    "format": "󰘚 {}%",
+    "states": {
+      "warning": 75,
+      "critical": 90,
+    },
+    "tooltip-format": "Memory Used: {used:0.1f}/{total:0.1f} GB",
+    "on-click": "ghostty --title=forced-floating -e btop",
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "",
+  },
+  "disk": {
+    "interval": 30,
+    "format": " {percentage_free}%",
+  },
+}

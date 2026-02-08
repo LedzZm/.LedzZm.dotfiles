@@ -1,0 +1,23 @@
+{
+  "mpris": {
+    "format": "{player_icon} ~ {status_icon}",
+    "player": "playerctld",
+    "max-length": 50,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous",
+    "format-paused": "{player_icon} ~ {status_icon}",
+    "player-icons": {
+      "default": "",
+      "spotify": "",
+      "vivaldi": "",
+      "chrome": "",
+      "firefox": "",
+      "brave": "",
+    },
+    "status-icons": {
+      "paused": "",
+      "playing": "▶",
+    },
+  },
+}
