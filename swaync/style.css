@@ -1,0 +1,297 @@
+@import "../colors/colors.css";
+
+* {
+  all: unset;
+  font-size: 14px;
+  font-family: "JetBrainsMono Nerd Font";
+  transition: 200ms;
+}
+
+trough highlight {
+  background: var(--text);
+}
+
+scale {
+  margin: 0 7px;
+}
+
+scale trough {
+  margin: 0rem 1rem;
+  min-height: 8px;
+  min-width: 70px;
+  border-radius: 12.6px;
+}
+
+trough slider {
+  margin: -10px;
+  border-radius: 12.6px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease;
+  background-color: var(--blue);
+}
+
+trough slider:hover {
+  box-shadow:
+    0 0 2px rgba(0, 0, 0, 0.8),
+    0 0 8px var(--blue);
+}
+
+trough {
+  background-color: var(--surface0);
+}
+
+/* notifications */
+.notification-background {
+  box-shadow:
+    0 0 8px 0 rgba(0, 0, 0, 0.8),
+    inset 0 0 0 1px var(--surface1);
+  border-radius: 12.6px;
+  margin: 4px;
+  background: var(--mantle);
+  color: var(--text);
+  padding: 0;
+}
+
+.notification-background .notification {
+  padding: 7px;
+  border-radius: 12.6px;
+}
+
+.notification-background .notification.critical {
+  background: darker(var(--red));
+}
+
+.notification .notification-content {
+  margin: 7px;
+}
+
+.notification .notification-content overlay {
+  /* icons */
+  margin: 4px;
+}
+
+.notification-content .summary {
+  color: var(--text);
+}
+
+.notification-content .time {
+  color: var(--subtext0);
+}
+
+.notification-content .body {
+  color: var(--subtext1);
+}
+
+.notification > *:last-child > * {
+  min-height: 3.4em;
+}
+
+.notification-background .close-button {
+  margin: 7px;
+  padding: 2px;
+  border-radius: 6.3px;
+  color: var(--base);
+  background-color: var(--red);
+}
+
+.notification-background .close-button:hover {
+  background-color: var(--maroon);
+}
+
+.notification-background .close-button:active {
+  background-color: var(--pink);
+}
+
+.notification .notification-action {
+  border-radius: 7px;
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--surface1);
+  margin: 4px;
+  padding: 8px;
+  font-size: 0.2rem; /* controls the button size not text size*/
+}
+
+.notification .notification-action {
+  background-color: var(--surface0);
+}
+
+.notification .notification-action:hover {
+  background-color: var(--surface1);
+}
+
+.notification .notification-action:active {
+  background-color: var(--surface2);
+}
+
+.notification.critical progress {
+  background-color: var(--red);
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background-color: var(--blue);
+}
+
+.notification progress,
+.notification trough,
+.notification progressbar {
+  border-radius: 12.6px;
+  padding: 3px 0;
+}
+
+/* control center */
+.control-center {
+  box-shadow:
+    0 0 8px 0 rgba(0, 0, 0, 0.8),
+    inset 0 0 0 1px var(--surface0);
+  border-radius: 12.6px;
+  background-color: var(--base);
+  color: var(--text);
+  padding: 14px;
+}
+
+.control-center .control-center-list-placeholder {
+  margin: 24px 0;
+}
+
+.control-center .notification-background {
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 1px var(--surface1);
+  margin: 4px 10px;
+}
+
+.control-center .notification-background .notification {
+  border-radius: 7px;
+}
+
+.control-center .notification-background .notification.low {
+  opacity: 0.8;
+}
+
+.control-center .widget-title > label {
+  color: var(--text);
+  font-size: 1.3em;
+}
+
+.control-center .widget-title button {
+  border-radius: 7px;
+  color: var(--text);
+  background-color: var(--surface0);
+  box-shadow: inset 0 0 0 1px var(--surface1);
+  padding: 8px;
+}
+
+.control-center .widget-title button:hover {
+  background-color: var(--surface1);
+}
+
+.control-center .widget-title button:active {
+  background-color: var(--surface2);
+}
+
+.control-center .notification-group {
+  margin-top: 10px;
+}
+
+.control-center .notification-group-headers {
+  margin: 20px 10px;
+  padding-left: 7px;
+}
+
+.control-center .notification-group-buttons {
+  padding-right: 7px;
+}
+
+.control-center .notification-group:focus .notification-background {
+  background-color: var(--surface0);
+}
+
+scrollbar slider {
+  margin: -3px;
+  opacity: 0.8;
+}
+
+scrollbar trough {
+  margin: 2px 0;
+}
+
+/* dnd */
+.widget-dnd {
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.widget-dnd > switch {
+  font-size: initial;
+  border-radius: 8px;
+  background: var(--surface0);
+  box-shadow: none;
+}
+
+.widget-dnd > switch:checked {
+  background: var(--blue);
+}
+
+.widget-dnd > switch slider {
+  background: var(--surface1);
+  border-radius: 8px;
+}
+
+.widget-menubar > box > .menu-button-bar > button > label {
+  font-size: 3rem;
+  padding: 0.5rem 2rem;
+}
+
+.widget-menubar > box > .menu-button-bar > :last-child {
+  color: var(--red);
+}
+
+.power-buttons button:hover,
+.powermode-buttons button:hover,
+.screenshot-buttons button:hover {
+  background: var(--surface0);
+}
+
+.control-center .widget-label > label {
+  color: var(--text);
+  font-size: 2rem;
+}
+
+.widget- buttons-grid {
+  padding-top: 1rem;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button label {
+  font-size: 2.5rem;
+}
+
+.widget-volume {
+  padding: 1rem 0;
+}
+
+.widget-volume label {
+  color: var(--sapphire);
+  padding: 0 1rem;
+}
+
+.widget-volume trough highlight {
+  background: var(--sapphire);
+}
+
+.widget-backlight trough highlight {
+  background: var(--yellow);
+}
+
+.widget-backlight label {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+.widget-backlight .KB {
+  padding-bottom: 1rem;
+}
+
+.image {
+  padding-right: 0.5rem;
+}
