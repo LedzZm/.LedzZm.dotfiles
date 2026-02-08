@@ -1,0 +1,27 @@
+{
+  "group/pulseaudio": {
+    "orientation": "inherit",
+    "drawer": {
+      "children-class": "nested-pulseaudio-slider",
+    },
+    "modules": ["pulseaudio", "pulseaudio/slider"],
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-bluetooth-muted": "󰟎 ",
+    "format-muted": "󰝟 ",
+    "format-icons": {
+      "default": [" ", " ", " "],
+      "headphone": "󰋋 ",
+    },
+    "on-click-right": "pavucontrol",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "min-length": 50,
+    "orientation": "horizontal",
+    "expand": false,
+  },
+}
