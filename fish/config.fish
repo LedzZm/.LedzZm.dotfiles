@@ -15,6 +15,10 @@ abbr -a dotfiles '/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XD
 # Sanity alias for scripts.
 alias nvm='fnm'
 
+# TODO: Move to other file or group
+set -gx PHPSTORM_JDK '/usr/lib/jvm/default'
+
+
 # Enable fzf keybindings. (CTRL-r/t/c)
 fzf --fish | source
 
