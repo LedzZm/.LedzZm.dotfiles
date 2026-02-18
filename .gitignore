@@ -12,6 +12,8 @@
 
 !hypr
 !hypr/**
+# User specific config should not be tracked, since it will include machine or environment dependent configuration.
+hypr/config/user-config.conf
 
 !scripts
 !scripts/**
