@@ -3,7 +3,7 @@ Highly personalised dotfiles and install scripts
 # Installation
 
 Clone the repository as a bare repo into your home directory:
-`git clone --bare git@github.com:LedzZm/.LedzZm.dotfiles.git $HOME/.LedzZm.dotfiles/
+`git clone --bare git@github.com:LedzZm/.LedzZm.dotfiles.git $HOME/.LedzZm.dotfiles/`
 Then using you config directory as a worktree, sync all the repository's contents. **This might cause you to lose config... use reponsively.**
 
 This repository ignores all files except those explicitly tracked (see .gitignore for details).
