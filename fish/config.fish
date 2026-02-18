@@ -4,12 +4,12 @@ function fish_greeting
     # Reset cachyos fish_greeting. For now this will remain empty.
 end
 
-# TODO: Investigate abbr vs alias.
-
 # TODO: Once stable convert to https://superuser.com/a/1688606
 abbr -a gs 'git status'
 abbr -a ga 'git add'
 abbr -a gd 'git diff'
+
+abbr -a dotfiles '/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XDG_CONFIG_HOME/'
 
 # TODO: Comment and group.
 # Sanity alias for scripts.
