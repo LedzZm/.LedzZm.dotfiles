@@ -4,6 +4,8 @@ Highly personalised dotfiles and install scripts
 
 Clone the repository as a bare repo into your home directory:
 
+- [ ] TODO: Use solution from https://news.ycombinator.com/item?id=11071754 instead of --bare and leave a link
+
 `git clone --bare git@github.com:LedzZm/.LedzZm.dotfiles.git $HOME/.LedzZm.dotfiles/`
 
 Then using you config directory as a worktree, sync all the repository's contents. **This might cause you to lose config... use reponsively.**
@@ -18,7 +20,7 @@ If you want to add more config directories, you will need to add them to the .gi
 
 You can then add an alias or abbreviation to your shell's config to execute git operations in a sane way (See fish/config.fish).
 
-[A more detailed explanation can be found here.](https://wiki.archlinux.org/title/Dotfiles#Tracking_dotfiles_directly_with_Git)
+[A more detailed explanation can be found here.](https://news.ycombinator.com/item?id=11071754)
 
 > [!WARNING]
 > Use scripts at your own risk... will probably break you system.
