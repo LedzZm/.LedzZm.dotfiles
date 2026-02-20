@@ -14,7 +14,7 @@ Untracked files will not be removed by accident **(Again... no promises)**
 
 If you want to add more config directories, you will need to add them to the .gitignore exclusions.
 
-`/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XDG_CONFIG_HOME/ checkout .`
+`/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XDG_CONFIG_HOME/ checkout`
 
 You can then add an alias or abbreviation to your shell's config to execute git operations in a sane way (See fish/config.fish).
 
