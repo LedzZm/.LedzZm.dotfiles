@@ -1,5 +1,5 @@
 Highly personalised dotfiles and install scripts
-test
+
 # Installation
 
 Clone the repository as a bare repo into your home directory:
