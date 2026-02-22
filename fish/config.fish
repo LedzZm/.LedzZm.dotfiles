@@ -9,6 +9,7 @@ abbr -a gs 'git status'
 abbr -a ga 'git add'
 abbr -a gd 'git diff'
 
+# Manage dotfiles via a --separate-git-dir setup.
 abbr -a dotfiles '/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XDG_CONFIG_HOME/'
 
 # TODO: Comment and group.
@@ -16,8 +17,7 @@ abbr -a dotfiles '/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XD
 alias nvm='fnm'
 
 # TODO: Move to other file or group
-set -gx PHPSTORM_JDK '/usr/lib/jvm/default'
-
+#set -gx PHPSTORM_JDK /usr/lib/jvm/default
 
 # Enable fzf keybindings. (CTRL-r/t/c)
 fzf --fish | source
