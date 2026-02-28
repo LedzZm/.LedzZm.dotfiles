@@ -2,11 +2,9 @@ Highly personalised dotfiles and install scripts
 
 # Installation
 
-Clone the repository as a bare repo into your home directory:
+Clone the repository as a separate direcroty repo into your home directory:
 
-- [ ] TODO: Use solution from https://news.ycombinator.com/item?id=11071754 instead of --bare and leave a link
-
-`git clone --bare git@github.com:LedzZm/.LedzZm.dotfiles.git $HOME/.LedzZm.dotfiles/`
+`git clone --separate-git-dir=$HOME/.LedzZm.dotfiles git@github.com:LedzZm/.LedzZm.dotfiles.git /tmp/.LedzZm.dotfiles/`
 
 Then using you config directory as a worktree, sync all the repository's contents. **This might cause you to lose config... use reponsively.**
 
@@ -18,7 +16,7 @@ If you want to add more config directories, you will need to add them to the .gi
 
 `/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XDG_CONFIG_HOME/ checkout -f`
 
-You can then add an alias or abbreviation to your shell's config to execute git operations in a sane way (See fish/config.fish).
+You can then add the above as an alias or abbreviation to your shell's config to execute git operations in a sane way (See fish/config.fish).
 
 [A more detailed explanation can be found here.](https://news.ycombinator.com/item?id=11071754)
 
