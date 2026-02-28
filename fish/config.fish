@@ -15,6 +15,8 @@ abbr -a dotfiles '/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XD
 # TODO: Comment and group.
 # Sanity alias for scripts.
 alias nvm='fnm'
+# TODO: Comment and group (or move to tother file for ddev or web dev specific aliases).
+alias portclip="ddev st -j | grep -oE '\"published_port\":[0-9]+' | grep -oE '[0-9]+' | tr -d '\n' | wl-copy"
 
 # TODO: Move to other file or group
 #set -gx PHPSTORM_JDK /usr/lib/jvm/default
