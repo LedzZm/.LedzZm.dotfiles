@@ -48,7 +48,8 @@ window#waybar {
 
 #system-health #cpu,
 #system-health #memory,
-#system-health #disk {
+#system-health #disk,
+#system-health #temperature {
   padding: 0 6px;
 }
 
@@ -62,6 +63,10 @@ window#waybar {
 
 #system-health #disk {
   color: @blue;
+}
+
+#system-health #temperature {
+  color: @red;
 }
 
 .modules-right {
@@ -100,7 +105,7 @@ window#waybar {
 }
 
 #custom-audio #mpris {
-  margin-right: 8px;
+  margin-right: 16px;
 }
 
 #pulseaudio {
