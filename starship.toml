@@ -10,6 +10,11 @@ $git_state\
 $git_metrics\
 $git_status\
 $fill\
+$php\
+$nodejs\
+$golang\
+$rust\
+$time\
 $all\
 $character\
 """
@@ -36,9 +41,13 @@ Windows = "󰍲"
 disabled = false
 symbol = '[✗](bold red) '
 
+[time]
+disabled = false
+format = '[   $time]($style)'
+
 [cmd_duration]
 show_milliseconds = true
-format = "[   $duration ]($style)"
+format = "[ ~ $duration]($style)"
 show_notifications = true
 min_time_to_notify = 180_000
 
