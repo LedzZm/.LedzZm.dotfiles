@@ -15,6 +15,9 @@
 # User specific config should not be tracked, since it will include machine or environment dependent configuration.
 hypr/config/user-config.conf
 
+!nmtui
+!nmtui/**
+
 !scripts
 !scripts/**
 
