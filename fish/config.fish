@@ -17,6 +17,11 @@ abbr -a dotfiles '/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XD
 alias nvm='fnm'
 # TODO: Comment and group (or move to tother file for ddev or web dev specific aliases).
 alias portclip="ddev st -j | grep -oE '\"published_port\":[0-9]+' | grep -oE '[0-9]+' | tr -d '\n' | wl-copy"
+# nmtui uses the selected color scheme, but does not do it properly for custom themes... this tries to fix that with a simplistic palette.
+function nmtui
+    set -lx NEWT_COLORS (cat ~/.config/nmtui/palette)
+    command nmtui
+end
 
 # TODO: Move to other file or group
 #set -gx PHPSTORM_JDK /usr/lib/jvm/default
