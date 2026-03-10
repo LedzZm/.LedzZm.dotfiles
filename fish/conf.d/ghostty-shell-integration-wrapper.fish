@@ -91,6 +91,7 @@ end
 
 # Function to reset background and foreground.
 function osc_reset
+    echo $default_bg
     printf "\033]110\007"
-    printf "\033]11%s\007" $default_bg
+    printf "\033]11;%s\007" $default_bg
 end
