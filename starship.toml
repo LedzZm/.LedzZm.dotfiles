@@ -103,6 +103,10 @@ symbol = " "
 format = ' [$symbol($version )]($style)'
 symbol = " "
 
+[lua]
+format = ' [$symbol($version )]($style)'
+symbol = ' '
+
 [rust]
 format = ' [$symbol($version )]($style)'
 symbol = " "
