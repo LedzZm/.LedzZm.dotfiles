@@ -1,12 +1,14 @@
-Highly personalised dotfiles and install scripts
+Highly personalized dotfiles and install scripts
 
+> [!WARNING]
+> Use scripts at your own risk... will probably break you system.
 # Installation
 
-Clone the repository as a separate direcroty repo into your home directory:
+Clone the repository as a separate directory repo into your home directory:
 
 `git clone --separate-git-dir=$HOME/.LedzZm.dotfiles git@github.com:LedzZm/.LedzZm.dotfiles.git /tmp/.LedzZm.dotfiles/`
 
-Then using you config directory as a worktree, sync all the repository's contents. **This might cause you to lose config... use reponsively.**
+Then using you config directory as a worktree, sync all the repository's contents. **This might cause you to lose config... use responsively.**
 
 This repository ignores all files except those explicitly tracked (see .gitignore for details).
 
@@ -20,5 +22,13 @@ You can then add the above as an alias or abbreviation to your shell's config to
 
 [A more detailed explanation can be found here.](https://news.ycombinator.com/item?id=11071754)
 
-> [!WARNING]
-> Use scripts at your own risk... will probably break you system.
+# FAQ
+
+## Having issues with input audio in voice calls or recordings?
+
+- **Lower the microphone boost** (Easiest way via `pavucontrol` in this setup)
+- For some headsets or microphones, the `auto gain control` might need to get enabled.
+	- Easiest setup via `alsamixer`:
+		1. Press `F6` to select the appropriate soundcard.
+		2. Navigate to `auto gain control`.
+		3. Press `M` for mute toggle.
