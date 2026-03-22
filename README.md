@@ -29,6 +29,6 @@ You can then add the above as an alias or abbreviation to your shell's config to
 - **Lower the microphone boost** (Easiest way via `pavucontrol` in this setup)
 - For some headsets or microphones, the `auto gain control` might need to get enabled.
 	- Easiest setup via `alsamixer`:
-		1. Press `F6` to select the appropriate soundcard.
+		1. Press `F6` to select the appropriate sound card.
 		2. Navigate to `auto gain control`.
 		3. Press `M` for mute toggle.
