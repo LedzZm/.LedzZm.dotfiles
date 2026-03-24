@@ -31,6 +31,8 @@ fzf --fish | source
 
 # Active fish theme. 
 fish_config theme choose "Catppuccin Macchiato"
+# TODO: Evaluate (Probably move to other file.)
+fish_add_path "$HOME/.local/bin"
 
 # Should better be kept at the end of the file
 starship init fish | source
