@@ -33,6 +33,7 @@ SETUVAR fish_pager_color_description:737994
 SETUVAR fish_pager_color_prefix:f4b8e4
 SETUVAR fish_pager_color_progress:737994
 SETUVAR fish_theme:Catppuccin\x20Macchiato
+SETUVAR fish_user_paths:/home/momo/\x2elocal/bin
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
 SETUVAR pure_color_at_sign:pure_color_mute
