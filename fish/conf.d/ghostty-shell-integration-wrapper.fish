@@ -72,12 +72,12 @@ end
 function host_colors_mapping -a host
     #set -l boring_blue '#000969 #e6e6e6'
     #set -l boring_dark '#000000 #e6e6e6'
-    #set -l hackerman '#000000 #00ff00'
+    set -l hackerman '#000000 #00ff00'
     set -l gruvbox '#282828 #ebdbb2'
-    set -l light '#fafafa #383a42'
+    #set -l light '#fafafa #383a42'
 
     set -l mapping \
-        "sf_production $light" \
+        "sf_production $hackerman" \
         "*.web-bunch.com $gruvbox"
 
     for entry in $mapping
