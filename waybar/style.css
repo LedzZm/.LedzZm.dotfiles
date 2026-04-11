@@ -39,11 +39,26 @@ window#waybar {
 #cpu {
   color: transparent;
 }
-#cpu.warning {
+#cpu.warning,
+#battery.warning {
   color: @peach;
 }
-#cpu.critical {
+
+#cpu.critical,
+#battery.critical {
   color: @red;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.charging.critical {
+  color: @peach;
+}
+
+#battery.charging.warning {
+  color: @blue;
 }
 
 #system-health #cpu,
