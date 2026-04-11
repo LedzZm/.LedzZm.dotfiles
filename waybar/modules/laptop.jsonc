@@ -1,9 +1,4 @@
 {
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""],
-  },
   "battery": {
     "interval": 30,
     "states": {
