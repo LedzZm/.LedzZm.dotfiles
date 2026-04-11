@@ -27,7 +27,6 @@ window#waybar {
 #network,
 #bluetooth,
 #language,
-#battery,
 #clock,
 #custom-swaync,
 #pulseaudio,
@@ -36,15 +35,10 @@ window#waybar {
   color: @default_text;
 }
 
-#cpu {
-  color: transparent;
-}
-#cpu.warning,
 #battery.warning {
   color: @peach;
 }
 
-#cpu.critical,
 #battery.critical {
   color: @red;
 }
@@ -53,34 +47,34 @@ window#waybar {
   color: @green;
 }
 
+#battery.charging.warning {
+  color: @yellow;
+}
+
 #battery.charging.critical {
   color: @peach;
 }
 
-#battery.charging.warning {
+#system-health {
   color: @blue;
 }
 
-#system-health #cpu,
-#system-health #memory,
-#system-health #disk,
-#system-health #temperature {
+#threshold-warnings widget label,
+#system-health box widget label {
   padding: 0 6px;
 }
 
-#system-health #cpu {
-  color: @red;
+#threshold-warnings widget label {
+  color: transparent;
 }
 
-#system-health #memory {
+#system-health .warning,
+#threshold-warnings .warning {
   color: @peach;
 }
 
-#system-health #disk {
-  color: @blue;
-}
-
-#system-health #temperature {
+#system-health .critical,
+#threshold-warnings .critical {
   color: @red;
 }
 

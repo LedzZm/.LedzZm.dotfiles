@@ -17,8 +17,7 @@
     "modules-left": ["hyprland/workspaces", "group/custom-audio"],
     "modules-center": ["privacy"],
     "modules-right": [
-      "cpu",
-
+      "group/threshold-warnings",
       "group/system-health",
       "network",
       "bluetooth",
@@ -32,6 +31,10 @@
     "group/custom-audio": {
       "orientation": "inherit",
       "modules": ["mpris", "group/pulseaudio"],
+    },
+    "group/threshold-warnings": {
+      "orientation": "horizontal",
+      "modules": ["cpu", "memory", "temperature", "disk"],
     },
     "group/system-health": {
       "orientation": "horizontal",
