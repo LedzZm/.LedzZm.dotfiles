@@ -5,15 +5,7 @@
     "name": "top-bar",
     "position": "top",
     "on-sigusr1": "toggle",
-    "include": [
-      "$HOME/.config/waybar/modules/basic.jsonc",
-      "$HOME/.config/waybar/modules/laptop.jsonc",
-      "$HOME/.config/waybar/modules/system-health.jsonc",
-      "$HOME/.config/waybar/modules/hyprland.jsonc",
-      "$HOME/.config/waybar/modules/swaync.jsonc",
-      "$HOME/.config/waybar/modules/pulseaudio.jsonc",
-      "$HOME/.config/waybar/modules/mpris.jsonc",
-    ],
+    "include": ["$HOME/.config/waybar/modules/*"],
     "modules-left": ["hyprland/workspaces", "group/custom-audio"],
     "modules-center": ["privacy"],
     "modules-right": [
