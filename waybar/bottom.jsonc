@@ -1,27 +1,12 @@
 [
   {
-    "include": [
-      "$HOME/.config/waybar/modules/basic.jsonc",
-      "$HOME/.config/waybar/modules/laptop.jsonc",
-      "$HOME/.config/waybar/modules/system-health.jsonc",
-      "$HOME/.config/waybar/modules/hyprland.jsonc",
-      "$HOME/.config/waybar/modules/swaync.jsonc",
-      "$HOME/.config/waybar/modules/pulseaudio.jsonc",
-      "$HOME/.config/waybar/modules/mpris.jsonc",
-    ],
-
     "layer": "top",
     "position": "bottom",
     "name": "bottom-bar",
     "on-sigusr1": "toggle",
     "modules-left": [],
     "modules-center": ["wlr/taskbar"],
-    "modules-right": [
-      "group/system-health",
-      "group/pulseaudio",
-      "tray",
-      "custom/session",
-    ],
+    "modules-right": ["tray", "custom/session"],
 
     "custom/session": {
       "format": "⏻",
