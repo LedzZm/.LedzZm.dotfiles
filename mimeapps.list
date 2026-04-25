@@ -1,0 +1,4 @@
+
+[Default Applications]
+x-scheme-handler/jetbrains=jetbrainsd.desktop
+inode/directory=thunar.desktop
