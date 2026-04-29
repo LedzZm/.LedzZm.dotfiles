@@ -22,7 +22,14 @@ You can then add the above as an alias or abbreviation to your shell's config to
 
 [A more detailed explanation can be found here.](https://news.ycombinator.com/item?id=11071754)
 
-# FAQ
+# Contents
+This repo contains config files for the following apps and utilities.
+
+## Screenshots
+- [Hyprshot](https://github.com/Gustash/Hyprshot) Hyprshot is an utility to easily take screenshot in Hyprland using your mouse.
+- [Swappy](https://github.com/jtheoof/swappy) - A Wayland native snapshot and editor tool
+
+# Troubleshooting
 
 ## Having issues with input audio in voice calls or recordings?
 
@@ -32,3 +39,4 @@ You can then add the above as an alias or abbreviation to your shell's config to
 		1. Press `F6` to select the appropriate sound card.
 		2. Navigate to `auto gain control`.
 		3. Press `M` for mute toggle.
+
