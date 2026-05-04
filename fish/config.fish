@@ -17,6 +17,7 @@ abbr -a dotfiles '/usr/bin/git --git-dir=$HOME/.LedzZm.dotfiles/ --work-tree=$XD
 alias nvm='fnm'
 # TODO: Comment and group (or move to tother file for ddev or web dev specific aliases).
 alias portclip="ddev st -j | grep -oE '\"published_port\":[0-9]+' | grep -oE '[0-9]+' | tr -d '\n' | wl-copy"
+# TODO: Move to an appropriate place.
 # nmtui uses the selected color scheme, but does not do it properly for custom themes... this tries to fix that with a simplistic palette.
 function nmtui
     set -lx NEWT_COLORS (cat ~/.config/nmtui/palette)
@@ -31,7 +32,8 @@ fzf --fish | source
 
 # Active fish theme. 
 fish_config theme choose "Catppuccin Macchiato"
-# TODO: Evaluate (Probably move to other file.)
+
+# TODO: I think this is needed for junie tui..... not sure... make sure then move to appropriate place.
 fish_add_path "$HOME/.local/bin"
 
 # Should better be kept at the end of the file
