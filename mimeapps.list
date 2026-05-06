@@ -2,3 +2,4 @@
 [Default Applications]
 x-scheme-handler/jetbrains=jetbrainsd.desktop
 inode/directory=thunar.desktop
+x-scheme-handler/webcal=vivaldi-stable.desktop
