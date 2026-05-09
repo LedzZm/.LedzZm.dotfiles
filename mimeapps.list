@@ -3,3 +3,8 @@
 x-scheme-handler/jetbrains=jetbrainsd.desktop
 inode/directory=thunar.desktop
 x-scheme-handler/webcal=vivaldi-stable.desktop
+text/html=vivaldi-stable.desktop
+x-scheme-handler/http=vivaldi-stable.desktop
+x-scheme-handler/https=vivaldi-stable.desktop
+x-scheme-handler/about=vivaldi-stable.desktop
+x-scheme-handler/unknown=vivaldi-stable.desktop
