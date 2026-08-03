@@ -32,6 +32,9 @@ hypr/config/user-config.conf
 !swaync
 !swaync/**
 
+!uwsm
+!uwsm/**
+
 !waybar
 !waybar/**
 
