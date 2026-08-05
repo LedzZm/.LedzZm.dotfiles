@@ -5,7 +5,6 @@ Browser = "vivaldi"
 Menu = "wofi --show drun"
 
 -- Base Config
-require(os.getenv("XDG_CONFIG_HOME") .. "/colors/colors")
 require("config/hypr-core-legacy")
 require("config/autostart")
 -- Eye Candy
