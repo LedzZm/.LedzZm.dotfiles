@@ -9,9 +9,9 @@ end
 
 -- Cycle through workspaces
 hl.bind(MainMod .. " + right", hl.dsp.focus({ workspace = "+1" }))
-hl.bind(MainMod .. " + mouse_down", hl.dsp.focus({ workspace = "+1" }))
+hl.bind(MainMod .. " + mouse_up", hl.dsp.focus({ workspace = "+1" }))
 hl.bind(MainMod .. " + left", hl.dsp.focus({ workspace = "-1" }))
-hl.bind(MainMod .. " + mouse_up", hl.dsp.focus({ workspace = "-1" }))
+hl.bind(MainMod .. " + mouse_down", hl.dsp.focus({ workspace = "-1" }))
 
 -- Special workspaces
 local specialWorkspaces = {
