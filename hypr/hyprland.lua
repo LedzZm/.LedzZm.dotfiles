@@ -14,11 +14,8 @@ require("config/animations")
 require("config/mouse")
 require("config/keybinds")
 require("config/keyboard")
---
--- # Window and layer management.
---
--- #source = ~/.config/hypr/config/windowrules
---
+-- Window and layer management.
+require("config/windowrules")
 -- Workspaces (Keybinds & rules)
 require("config/workspaces")
 
