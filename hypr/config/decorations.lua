@@ -1,5 +1,11 @@
 local colors = require(os.getenv("XDG_CONFIG_HOME") .. "/colors/colors")
 
+hl.window_rule({
+	name = "transparent-terminal",
+	match = { class = "com.mitchellh.ghostty" },
+	opacity = 0.92,
+})
+
 hl.config({
 	general = {
 		gaps_in = 2,
@@ -13,11 +19,9 @@ hl.config({
 		rounding_power = 2,
 
 		-- Change transparency of focused and unfocused windows
-		-- TODO: This does not seem to work.
 		active_opacity = 1.0,
 		inactive_opacity = 1.0,
 
-		-- TODO: This does not seem to work... reevaluate after the other blur setting is in place.
 		blur = {
 			enabled = true,
 			size = 5,
