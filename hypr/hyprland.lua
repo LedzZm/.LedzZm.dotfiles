@@ -9,9 +9,9 @@ require("config/hypr-core-legacy")
 require("config/autostart")
 -- Eye Candy
 require("config/decorations")
--- 	#source = ~/.config/hypr/config/animations
+require("config/animations")
 -- Input
--- #source = ~/.config/hypr/config/mouse
+require("config/mouse")
 require("config/keybinds")
 require("config/keyboard")
 --
