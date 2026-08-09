@@ -14,6 +14,8 @@ hl.bind(MainMod .. " + left", hl.dsp.focus({ workspace = "-1" }))
 hl.bind(MainMod .. " + mouse_down", hl.dsp.focus({ workspace = "-1" }))
 
 -- Special workspaces
+hl.config({ binds = { hide_special_on_workspace_change = true } })
+
 local specialWorkspaces = {
 	["C"] = "console",
 	["O"] = "obsidian",

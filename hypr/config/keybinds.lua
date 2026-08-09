@@ -22,6 +22,7 @@ hl.bind(MainMod .. " + P", hl.dsp.window.float())
 -- Group Window Management
 hl.bind(MainMod .. " + G", hl.dsp.group.toggle())
 hl.bind(MainMod .. " + mouse:274", hl.dsp.window.move({ out_of_group = "right" }))
+hl.bind(MainMod .. " + SHIFT + G", hl.dsp.window.move({ out_of_group = "right" }))
 hl.bind(MainMod .. " + TAB", hl.dsp.group.next())
 hl.bind(MainMod .. " + SHIFT + TAB", hl.dsp.group.prev())
 
