@@ -32,10 +32,9 @@ require("config.apps")
 -- # Config / Feature that are either unstable, OR I am not sure I want / need them.
 -- 	#source = ~/.config.hypr/experimental
 --
--- # User / Machine specific Configuration
+-- User / Machine specific Configuration
 -- --	#source = ~/.config.hypr/config/user-config --
---
---
+require("config.user-config")
 
 -- General Settings
 hl.config({

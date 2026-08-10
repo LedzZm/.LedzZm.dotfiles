@@ -1,2 +1,2 @@
 -- Recommended rule for quickly plugging in random monitors
-hl.monitor({ output = "", mode = "preferred", position = "auto", scale = 1 })
+-- hl.monitor({ output = "", mode = "preferred", position = "auto", scale = 1 })
