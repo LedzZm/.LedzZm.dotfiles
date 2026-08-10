@@ -1,8 +1,10 @@
 -- Binds for quick app launch
+-- TODO: Do those need to be executed with uwsm???
 hl.bind(MainMod .. " + RETURN", hl.dsp.exec_cmd(Terminal))
 hl.bind(MainMod .. " + SPACE", hl.dsp.exec_cmd(Menu))
 hl.bind(MainMod .. " + E", hl.dsp.exec_cmd(FileManager))
 hl.bind(MainMod .. " + B", hl.dsp.exec_cmd(Browser))
+hl.bind(MainMod .. " + X", hl.dsp.exec_cmd("1password"))
 
 -- Shortcut for using the clipboard manager app
 hl.bind(

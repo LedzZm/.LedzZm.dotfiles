@@ -30,6 +30,7 @@ local floatByClass = {
 	"org.kde.kcalc",
 	"org.cachyos.hello",
 }
+
 for index = 1, #floatByTytle do
 	center_float(floatByTytle[index], "title")
 end
