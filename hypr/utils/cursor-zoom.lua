@@ -1,3 +1,4 @@
+-- @see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Uncommon-tips-and-tricks/#glass-magnifier-zoom
 local MAX_ZOOM = 3
 local MIN_ZOOM = 1
 local ZOOM_TOGGLE_FACTOR = 2
