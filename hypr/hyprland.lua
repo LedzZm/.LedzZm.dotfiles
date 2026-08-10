@@ -33,8 +33,8 @@ require("config.apps")
 -- 	#source = ~/.config.hypr/experimental
 --
 -- User / Machine specific Configuration
--- --	#source = ~/.config.hypr/config/user-config --
-require("config.user-config")
+-- TODO: BEDO
+-- require("config.user-config")
 
 -- General Settings
 hl.config({
