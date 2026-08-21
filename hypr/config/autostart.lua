@@ -6,5 +6,5 @@ hl.on("hyprland.start", function()
 	-- Autostart bluetooth device manager.
 	hl.exec_cmd("blueman-applet --no-tray")
 	-- Register hyprpaper.
-	hl.exec_cmd("hyprpaper")
+	hl.exec_cmd("systemctl --user enable --now hyprpaper.service")
 end)

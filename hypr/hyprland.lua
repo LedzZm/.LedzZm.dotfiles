@@ -29,6 +29,10 @@ require("config.workspaces")
 -- App Configuration
 require("config.apps")
 
+-- Gaming
+-- TODO: decide if this should be optional
+-- require("config.gaming")
+
 -- # Config / Feature that are either unstable, OR I am not sure I want / need them.
 -- 	#source = ~/.config.hypr/experimental
 --
@@ -58,6 +62,7 @@ hl.config({
 	render = {
 		-- Direct scanout attempts to reduce lag when there is only one fullscreen application.
 		-- Set to false if the fullscreen apps show graphical glitches.
+		-- TODO: Move to gaming config?
 		direct_scanout = true,
 	},
 })

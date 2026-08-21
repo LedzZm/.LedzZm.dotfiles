@@ -14,13 +14,14 @@ hl.window_rule({
 	min_size = { 875, 600 },
 })
 
-local floatByTytle = {
+local floatByTitle = {
 	"Open",
 	"Picture in picture",
 	"All Files",
 	"Save",
 	"btop",
 	"Steam - Self Updater",
+	"nmtui",
 }
 
 local floatByClass = {
@@ -29,10 +30,13 @@ local floatByClass = {
 	"thunar",
 	"org.kde.kcalc",
 	"org.cachyos.hello",
+	"xdg-desktop-portal-gtk",
+	"xdg-desktop-portal-kde",
+	"xdg-desktop-portal-hyprland",
 }
 
-for index = 1, #floatByTytle do
-	center_float(floatByTytle[index], "title")
+for index = 1, #floatByTitle do
+	center_float(floatByTitle[index], "title")
 end
 
 for index = 1, #floatByClass do
