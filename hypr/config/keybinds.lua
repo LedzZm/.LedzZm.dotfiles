@@ -5,6 +5,7 @@ hl.bind(MainMod .. " + SPACE", hl.dsp.exec_cmd(Menu))
 hl.bind(MainMod .. " + E", hl.dsp.exec_cmd(FileManager))
 hl.bind(MainMod .. " + B", hl.dsp.exec_cmd(Browser))
 hl.bind(MainMod .. " + X", hl.dsp.exec_cmd("1password"))
+hl.bind("CONTROL + SHIFT + Escape", hl.dsp.exec_cmd(Terminal .. " --title=btop -e btop"))
 
 -- Shortcut for using the clipboard manager app
 hl.bind(
