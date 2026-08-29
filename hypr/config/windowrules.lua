@@ -27,7 +27,8 @@ local floatByTitle = {
 local floatByClass = {
 	"blueman-manager",
 	"org.pulseaudio.pavucontrol",
-	"Thunar",
+	"Thunar|thunar",
+	"feh",
 	"org.kde.kcalc",
 	"org.cachyos.hello",
 	"xdg-desktop-portal-gtk",
