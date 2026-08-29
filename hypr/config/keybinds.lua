@@ -16,8 +16,8 @@ hl.bind(
 )
 
 -- Basic Window Management
-hl.bind(MainMod .. "+ Q", hl.dsp.window.close())
-hl.bind(MainMod .. "+ SHIFT + Q", hl.dsp.window.kill())
+hl.bind(MainMod .. " + Q", hl.dsp.window.close())
+hl.bind(MainMod .. " + SHIFT + Q", hl.dsp.window.kill())
 hl.bind(MainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(MainMod .. " + M", hl.dsp.window.fullscreen({ mode = "maximized" }))
 hl.bind(MainMod .. " + P", hl.dsp.window.float())
@@ -44,10 +44,10 @@ hl.bind("ALT + TAB", hl.dsp.window.cycle_next())
 hl.bind("SHIFT + TAB", hl.dsp.window.cycle_next({ next = false }))
 
 -- Move window towards a direction
-hl.bind(MainMod .. "+ SHIFT + J", hl.dsp.window.move({ direction = "up" }))
-hl.bind(MainMod .. "+ SHIFT + L", hl.dsp.window.move({ direction = "right" }))
-hl.bind(MainMod .. "+ SHIFT + K", hl.dsp.window.move({ direction = "down" }))
-hl.bind(MainMod .. "+ SHIFT + H", hl.dsp.window.move({ direction = "left" }))
+hl.bind(MainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "up" }))
+hl.bind(MainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
+hl.bind(MainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "down" }))
+hl.bind(MainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
 
 -- Volume up/down with long press
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true })

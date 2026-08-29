@@ -19,6 +19,3 @@ hl.monitor({
 	bitdepth = 10,
 	-- cm = "wide",
 })
-
--- hl.env("HYPRSHOT_DIR", os.getenv("HOME") .. "/Pictures/Screenshots")
--- hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -r | swappy -f -"))
