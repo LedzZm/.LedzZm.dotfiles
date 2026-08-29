@@ -39,6 +39,10 @@ hl.bind(MainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(MainMod .. " + K", hl.dsp.focus({ direction = "down" }))
 hl.bind(MainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 
+-- Cycle focus with ALT/SHIFT + TAB
+hl.bind("ALT + TAB", hl.dsp.window.cycle_next())
+hl.bind("SHIFT + TAB", hl.dsp.window.cycle_next({ next = false }))
+
 -- Move window towards a direction
 hl.bind(MainMod .. "+ SHIFT + J", hl.dsp.window.move({ direction = "up" }))
 hl.bind(MainMod .. "+ SHIFT + L", hl.dsp.window.move({ direction = "right" }))
