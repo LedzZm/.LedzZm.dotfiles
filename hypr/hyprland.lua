@@ -23,7 +23,7 @@ hl.config({
 	general = {
 		-- TODO: Needs testing
 		-- TODO: @see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/
-		-- TODO: Try with cs?
+		-- TODO: Try with some fps game?
 		-- TODO: Also check misc { ?vrr } option
 		-- TODO: Ask in discord?
 		-- TODO: If allow_tearing, direct_scanout and vrr are only gaming related, consider making a gaming.lua config.
