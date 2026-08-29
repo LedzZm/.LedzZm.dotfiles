@@ -25,16 +25,15 @@ function nmtui
 end
 
 # TODO: Move to other file or group
+# TODO: Check If I can expose via hypr config instead of fish and check if I can do that conditionally (With a trigger)
 #set -gx PHPSTORM_JDK /usr/lib/jvm/default
+#set -gx RUSTROVER_JDK /usr/lib/jvm/default
 
 # Enable fzf keybindings. (CTRL-r/t/c)
 fzf --fish | source
 
 # Active fish theme. 
 fish_config theme choose "Catppuccin Macchiato"
-
-# TODO: I think this is needed for junie tui..... not sure... make sure then move to appropriate place.
-fish_add_path "$HOME/.local/bin"
 
 # Should better be kept at the end of the file
 starship init fish | source
