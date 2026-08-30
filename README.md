@@ -25,8 +25,8 @@ You can then add the above as an alias or abbreviation to your shell's config to
 # Index
 TODO: This section needs to be moved/improved
 - [Hyprland](hypr/README.md)
-- [Colors](colors/README.md)
 - [Fish](fish/README.md)
+- [Colors](colors/README.md)
 
 # Contents
 This repo contains config files for the following apps and utilities.
