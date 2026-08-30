@@ -11,10 +11,6 @@ require("config")
 -- Gaming
 -- TODO: decide if this should be optional
 -- require("config.gaming")
-
--- # Config / Feature that are either unstable, OR I am not sure I want / need them.
--- 	#source = ~/.config.hypr/experimental
---
 -- User / Machine specific Configuration
 pcall(require, "user-config")
 
