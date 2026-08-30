@@ -102,8 +102,6 @@ File: [config/keybinds.lua](config/keybinds.lua)
 | XF86MonBrightnessUp | Step brightness up by 5% |
 | XF86MonBrightnessDown | Step brightness down by 5% |
 
----
-
 ### Workspace Navigation & Special Workspaces
 File: [config/workspaces.lua](config/workspaces.lua)
 
@@ -126,8 +124,6 @@ File: [config/workspaces.lua](config/workspaces.lua)
 | SUPER + SHIFT + O | Move window to obsidian scratchpad |
 | SUPER + CONTROL + O | Move window to obsidian silently |
 
----
-
 ### Waybar Submap
 File: [config/apps/waybar.lua](config/apps/waybar.lua)
 
@@ -138,16 +134,12 @@ File: [config/apps/waybar.lua](config/apps/waybar.lua)
 | B | Toggle bottom Waybar instance visibility |
 | Escape | Exit submap back to global keybindings |
 
----
-
 ### Magnifier Tool
 File: [utils/cursor-zoom.lua](utils/cursor-zoom.lua)
 
 | Keybind | Description |
 |---|---|
 | SUPER + Z | Toggle cursor zoom magnifier |
-
----
 
 ### Lid Hardware Switches
 File: [laptop.lua](laptop.lua)
@@ -157,16 +149,12 @@ File: [laptop.lua](laptop.lua)
 | switch:on:Lid Switch | Disables internal screen (eDP-1) |
 | switch:off:Lid Switch | Enables internal screen (eDP-1) |
 
----
-
 ### Keyboard Layout Switching
 File: [config/keyboard.lua](config/keyboard.lua)
 
 | Keybind | Description |
 |---|---|
 | Alt + Shift | Toggle active keyboard layout between selected languages |
-
----
 
 ### Screenshot Utilities
 File: [utils/screen-capture.lua](utils/screen-capture.lua)
@@ -176,5 +164,3 @@ File: [utils/screen-capture.lua](utils/screen-capture.lua)
 | Print | Hyprshot capture entire output and edit with swappy |
 | SUPER + Print | Hyprshot capture active window and edit with swappy |
 | SHIFT + Print | Hyprshot capture selected region and edit with swappy |
-
----
