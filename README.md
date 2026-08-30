@@ -22,6 +22,12 @@ You can then add the above as an alias or abbreviation to your shell's config to
 
 [A more detailed explanation can be found here.](https://news.ycombinator.com/item?id=11071754)
 
+# Index
+TODO: This section needs to be moved/improved
+- hypr/README.md
+- colors/README.md
+- fish/README.md
+
 # Contents
 This repo contains config files for the following apps and utilities.
 
