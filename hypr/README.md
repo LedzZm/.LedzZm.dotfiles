@@ -21,7 +21,6 @@
 │   ├── windowrules.lua        # General floating, centering, and sizing rules
 │   ├── workspaces.lua         # Workspace keybinds and special workspaces
 │   ├── apps/                  # Application-specific configurations
-│   │   ├── init.lua           # App module aggregator
 │   │   ├── jetbrains.lua      # JetBrains IDE window rules & border sizing
 │   │   ├── steam.lua          # Steam window rules (floating Friends List)
 │   │   └── waybar.lua         # Dual Waybar instances & submap controls
@@ -29,7 +28,6 @@
 │       ├── franky.lua         # Dual-monitor setup with VRR and 10-bit color depth
 │       └── merrygo.lua        # Portable monitor configuration template
 └── utils/                     # Utility helpers and tools
-    ├── init.lua               # Utility aggregator
     ├── cursor-zoom.lua        # Dynamic cursor magnifier zoom toggle
     └── screen-capture.lua     # Hyprshot directory environment and screenshot helpers
 ```
