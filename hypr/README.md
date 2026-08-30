@@ -1,4 +1,5 @@
 # Hyprland
+No manual actions are really needed besides ensuring that `user-conf.lua` requires the correct machine config (optional).
 
 ## Directory & File Structure
 
@@ -138,13 +139,14 @@ File: [utils/cursor-zoom.lua](utils/cursor-zoom.lua)
 |---|---|
 | SUPER + Z | Toggle cursor zoom magnifier |
 
-### Lid Hardware Switches
+### Laptop configuration
 File: [laptop.lua](laptop.lua)
 
 | Keybind | Description |
 |---|---|
-| switch:on:Lid Switch | Disables internal screen (eDP-1) |
-| switch:off:Lid Switch | Enables internal screen (eDP-1) |
+| switch:on:Lid Switch | Disables laptop screen (eDP-1) |
+| switch:off:Lid Switch | Enables laptop screen (eDP-1) |
+| 4 finger drag (Horizontal) | Cycle workspaces |
 
 ### Keyboard Layout Switching
 File: [config/keyboard.lua](config/keyboard.lua)
