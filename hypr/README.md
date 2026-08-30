@@ -5,22 +5,21 @@
 `~/$XDG_CONFIG_HOME/hypr/`
 
 ```
-├── hyprland.lua               # Main entry point & general engine settings
-├── user-config.lua            # Machine-specific configuration selector
-├── laptop.lua                 # Laptop lid switch handling & monitor toggling
+├── hyprland.lua               # Main entry point & general settings
+├── user-config.lua            # User-specific configuration and overrides
+├── laptop.lua                 # Laptop utilities like lid switch handling & monitor toggling
 ├── hyprpaper.conf             # Wallpaper daemon configuration
 ├── config/                    # Core configuration modules
-│   ├── init.lua               # Master loader for core config modules
 │   ├── autostart.lua          # Autostart services and background daemons
-│   ├── animations.lua         # Custom Bézier curves and animation timings
-│   ├── decorations.lua        # Window borders, rounding, blur, and groupbar styling
-│   ├── gaming.lua             # Gaming window rules and pointer confinement
+│   ├── animations.lua         # Well... animations... duh
+│   ├── decorations.lua        # Window borders, rounding, blur, groupbar styling and other eye candy
+│   ├── gaming.lua             # Gaming utilities, and window rules
 │   ├── hypr-core-legacy.lua   # Core window rules (suppress maximize, XWayland drag fix)
 │   ├── keyboard.lua           # Keyboard layouts and switching rules
 │   ├── keybinds.lua           # Global keybindings, media controls, and window actions
 │   ├── mouse.lua              # Mouse focus behaviors and touchpad gestures
 │   ├── windowrules.lua        # General floating, centering, and sizing rules
-│   ├── workspaces.lua         # Workspace keybinds and special scratchpads
+│   ├── workspaces.lua         # Workspace keybinds and special workspaces
 │   ├── apps/                  # Application-specific configurations
 │   │   ├── init.lua           # App module aggregator
 │   │   ├── jetbrains.lua      # JetBrains IDE window rules & border sizing
