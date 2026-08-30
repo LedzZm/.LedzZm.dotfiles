@@ -13,3 +13,14 @@ end)
 hl.bind("switch:off:Lid Switch", function()
 	hl.monitor({ output = "eDP-1", disabled = false })
 end)
+
+hl.config({
+	input = {
+		touchpad = {
+			-- Map click+drag to a three finger drag.
+			drag_3fg = 1,
+		},
+	},
+})
+-- Cycle through workspace on 4 finger drag.
+hl.gesture({ fingers = 4, direction = "horizontal", action = "workspace" })

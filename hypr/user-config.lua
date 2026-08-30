@@ -1,1 +1,1 @@
-require("config.machines.franky")
+require("config.machines.merrygo")
