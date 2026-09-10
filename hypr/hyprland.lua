@@ -50,3 +50,26 @@ hl.layer_rule({
 	-- TODO: This should also apply to the actual notrification layer as well as the control center
 	no_screen_share = true,
 })
+
+-- Switch to a submap for lock or powerdown.
+-- TODO: Implement correct commands when available
+-- TODO: Exist submap on every selection
+hl.bind(MainMod .. "+ ESCAPE", hl.dsp.submap("terminate"))
+hl.define_submap("terminate", function()
+	hl.bind("L", function()
+		hl.dispatch(hl.dsp.exec_raw("hyprlock"))
+		hl.dispatch(hl.dsp.submap("reset"))
+	end)
+
+	hl.bind("U", function()
+		hl.dispatch(hl.dsp.exec_raw("hyprctl notify 4 1000 0 SWITCH USER"))
+		hl.dispatch(hl.dsp.submap("reset"))
+	end)
+
+	hl.bind("P", function()
+		hl.dispatch(hl.dsp.exec_raw("hyprctl notify 3 1000 0 POWEROFF"))
+		hl.dispatch(hl.dsp.submap("reset"))
+	end)
+
+	hl.bind("escape", hl.dsp.submap("reset"))
+end)
