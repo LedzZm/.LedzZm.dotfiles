@@ -1,6 +1,6 @@
 hl.config({
 	input = {
 		kb_layout = "us, gr",
-		kb_options = "grp:alt_space_toggle",
+		kb_options = "grp:ctrl_space_toggle",
 	},
 })
