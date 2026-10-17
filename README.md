@@ -1,14 +1,14 @@
 Highly personalized dotfiles and install scripts
 
 > [!WARNING]
-> Use scripts at your own risk... will probably break you system.
+> Use scripts at your own risk... will probably break your system.
 # Installation
 
 Clone the repository as a separate directory repo into your home directory:
 
 `git clone --separate-git-dir=$HOME/.LedzZm.dotfiles git@github.com:LedzZm/.LedzZm.dotfiles.git /tmp/.LedzZm.dotfiles/`
 
-Then using you config directory as a worktree, sync all the repository's contents. **This might cause you to lose config... use responsively.**
+Then using your config directory as a worktree, sync all the repository's contents. **This might cause you to lose config... use responsibly.**
 
 This repository ignores all files except those explicitly tracked (see .gitignore for details).
 
@@ -32,7 +32,7 @@ TODO: This section needs to be moved/improved
 This repo contains config files for the following apps and utilities.
 
 ## Screenshots
-- [Hyprshot](https://github.com/Gustash/Hyprshot) Hyprshot is an utility to easily take screenshot in Hyprland using your mouse.
+- [Hyprshot](https://github.com/Gustash/Hyprshot) - A utility to easily take screenshot in Hyprland using your mouse.
 - [Swappy](https://github.com/jtheoof/swappy) - A Wayland native snapshot and editor tool
 
 # Troubleshooting
@@ -40,7 +40,7 @@ This repo contains config files for the following apps and utilities.
 ## Having issues with input audio in voice calls or recordings?
 
 - **Lower the microphone boost** (Easiest way via `pavucontrol` in this setup)
-- For some headsets or microphones, the `auto gain control` might need to get enabled.
+- For some headsets or microphones, the `auto gain control` might need to be enabled.
 	- Easiest setup via `alsamixer`:
 		1. Press `F6` to select the appropriate sound card.
 		2. Navigate to `auto gain control`.
