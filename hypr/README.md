@@ -62,13 +62,13 @@ File: [config/keybinds.lua](config/keybinds.lua)
 #### Window Focus & Window Movement (Vim Navigation)
 | Keybind | Description |
 |---|---|
+| SUPER + K | Move focus up |
 | SUPER + H | Move focus left |
-| SUPER + J | Move focus up |
-| SUPER + K | Move focus down |
+| SUPER + J | Move focus down |
 | SUPER + L | Move focus right |
+| SUPER + SHIFT + K | Move active window up |
 | SUPER + SHIFT + H | Move active window left |
-| SUPER + SHIFT + J | Move active window up |
-| SUPER + SHIFT + K | Move active window down |
+| SUPER + SHIFT + J | Move active window down |
 | SUPER + SHIFT + L | Move active window right |
 | ALT + TAB | Cycle focus forward through windows |
 | ALT + SHIFT + TAB | Cycle focus backward through windows |

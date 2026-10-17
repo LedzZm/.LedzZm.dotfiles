@@ -34,9 +34,9 @@ hl.bind(MainMod .. " + mouse:272", hl.dsp.window.drag())
 hl.bind(MainMod .. " + mouse:273", hl.dsp.window.resize())
 
 -- Move focus with mainMod + vim motions
-hl.bind(MainMod .. " + J", hl.dsp.focus({ direction = "up" }))
+hl.bind(MainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(MainMod .. " + L", hl.dsp.focus({ direction = "right" }))
-hl.bind(MainMod .. " + K", hl.dsp.focus({ direction = "down" }))
+hl.bind(MainMod .. " + J", hl.dsp.focus({ direction = "down" }))
 hl.bind(MainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 
 -- Cycle focus with ALT/SHIFT + TAB
@@ -44,9 +44,9 @@ hl.bind("ALT + TAB", hl.dsp.window.cycle_next())
 hl.bind("ALT + SHIFT + TAB", hl.dsp.window.cycle_next({ next = false }))
 
 -- Move window towards a direction
-hl.bind(MainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "up" }))
+hl.bind(MainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "up" }))
 hl.bind(MainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
-hl.bind(MainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "down" }))
+hl.bind(MainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 hl.bind(MainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
 
 -- Volume up/down with long press
