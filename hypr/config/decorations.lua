@@ -3,7 +3,9 @@ local colors = require(os.getenv("XDG_CONFIG_HOME") .. "/colors/colors")
 hl.window_rule({
 	name = "transparent-terminal",
 	match = { class = "com.mitchellh.ghostty" },
-	opacity = 0.92,
+	-- TODO: GTK fucked blur, so until I find a workaround, I don't want terminals to be just opaque.
+	-- @see https://github.com/hyprwm/Hyprland/discussions/16507#discussioncomment-19110671
+	-- opacity = 0.92,
 })
 
 hl.config({
@@ -51,7 +53,7 @@ hl.config({
 			gradient_round_only_edges = false,
 
 			font_size = 12,
-			text_padding = 24,
+			text_padding = 22,
 			font_weight_active = "bold",
 
 			text_color = colors.mauve,
