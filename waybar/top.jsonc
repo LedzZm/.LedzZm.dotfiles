@@ -6,7 +6,7 @@
     "position": "top",
     "on-sigusr1": "toggle",
     "include": ["$HOME/.config/waybar/modules/*"],
-    "modules-left": ["hyprland/workspaces", "group/custom-audio"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["privacy"],
     "modules-right": [
       "group/threshold-warnings",
